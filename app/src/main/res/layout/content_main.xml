@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="4dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bk_element_liste"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Serveur"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextServeur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Nom ou IP"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonListeServeurs"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        <ImageButton
+            android:id="@+id/imageButtonListeServeurs"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClickListeServeurs"
+            android:tint="@color/colorAccent"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextPort"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextServeur"
+            app:srcCompat="@drawable/ic_server_network" />
+
+        <EditText
+            android:id="@+id/editTextPort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="N° de port"
+            android:inputType="number"
+            android:text="50566"
+            app:layout_constraintBottom_toTopOf="@+id/textViewNbTrouves"
+            app:layout_constraintEnd_toEndOf="@+id/editTextServeur"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/editTextServeur" />
+
+        <TextView
+            android:id="@+id/textViewNbTrouves"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.2"
+            android:text="Recherche des serveurs en cours, 0 trouvés"
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPort" />
+
+        <ProgressBar
+            android:id="@+id/progressBarChercheServeurs"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="255"
+            app:layout_constraintEnd_toEndOf="@+id/textViewNbTrouves"
+            app:layout_constraintStart_toStartOf="@+id/textViewNbTrouves"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNbTrouves" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Adresse:"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Port:"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPort"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/editTextPort" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bk_element_liste"
+        android:paddingTop="0dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ToggleButton
+                android:id="@+id/toggleButtonSauvegarde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_selector"
+                android:checked="true"
+                android:onClick="onClickModeSauvegarde"
+                android:text="@string/sauvegarde_failed"
+                android:textAllCaps="false"
+                android:textColor="@drawable/text_color_selector"
+                android:textOff="Sauvegarde"
+                android:textOn="Sauvegarde" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonRestauration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:onClick="onClickModeRestauration"
+                android:text="@string/libelle_restauration"
+                android:textAllCaps="false"
+                android:textColor="@drawable/text_color_selector"
+                android:textOff="Restauration"
+                android:textOn="Restauration" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBoxMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:drawableRight="@drawable/ic_message_text"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Messages"
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxAppels" />
+
+        <CheckBox
+            android:id="@+id/checkBoxContacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:drawableRight="@drawable/ic_contact_phone"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Contacts"
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxMessages"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxMessages"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <TextView
+            android:id="@+id/textViewStatusContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="0/0"
+            android:textColor="@color/couleur_texte"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxContacts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxContacts" />
+
+        <ProgressBar
+            android:id="@+id/progressBarContacts"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxContacts"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStatusContacts"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxContacts"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxContacts" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAppels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:drawableRight="@drawable/ic_phone_classic"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Appels   "
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxContacts"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxContacts"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxContacts" />
+
+        <TextView
+            android:id="@+id/textViewStatusAppels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textColor="@color/couleur_texte"
+
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxAppels"
+            app:layout_constraintEnd_toEndOf="@+id/textViewStatusVideos"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxAppels" />
+
+        <ProgressBar
+            android:id="@+id/progressBarAppels"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxAppels"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStatusAppels"
+            app:layout_constraintStart_toStartOf="@+id/progressBarContacts"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxAppels" />
+
+        <ProgressBar
+            android:id="@+id/progressBarMessages"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxMessages"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStatusMessages"
+            app:layout_constraintStart_toStartOf="@+id/progressBarContacts"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxMessages" />
+
+        <TextView
+            android:id="@+id/textViewStatusMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="0/0"
+            android:textColor="@color/couleur_texte"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxMessages"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxMessages" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:drawableRight="@drawable/ic_message_image"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="MMS"
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxMessages"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxContacts"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMessages" />
+
+        <TextView
+            android:id="@+id/textViewStatusMMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="0/0"
+            android:textColor="@color/couleur_texte"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxMMS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxMMS" />
+
+        <ProgressBar
+            android:id="@+id/progressBarMMS"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxMMS"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStatusMMS"
+            app:layout_constraintStart_toStartOf="@+id/progressBarAppels"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxMMS" />
+
+        <CheckBox
+            android:id="@+id/checkBoxImages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:drawableRight="@drawable/ic_file_image"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Photos"
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxContacts"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxContacts"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMMS" />
+
+        <TextView
+            android:id="@+id/textViewStatusPhotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="0/0"
+            android:textColor="@color/couleur_texte"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxImages"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxImages" />
+
+        <ProgressBar
+            android:id="@+id/progressBarPhotos"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxImages"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStatusPhotos"
+            app:layout_constraintStart_toStartOf="@+id/progressBarContacts"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxImages" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVideos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:drawableRight="@drawable/ic_file_video"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Vidéos"
+            android:textColor="@color/couleur_texte"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxContacts"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxContacts"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxImages" />
+
+        <TextView
+            android:id="@+id/textViewStatusVideos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="0/0"
+            android:textColor="@color/couleur_texte"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxVideos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxVideos" />
+
+        <ProgressBar
+            android:id="@+id/progressBarVideos"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxVideos"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStatusVideos"
+            app:layout_constraintStart_toStartOf="@+id/progressBarContacts"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxVideos" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Sauvegarde Locale</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_sauver">Sauver</string>
+    <string name="action_charger">Charger</string>
+    <string name="format_nom_profil">sans nom %1$d</string>
+    <string name="sauvegarde_ok">Sauvegarde correctement terminée</string>
+    <string name="sauvegarde_failed">Sauvegarde échouée</string>
+    <string name="sauvegarde_annulee">Sauvegarde annulée</string>
+    <string name="snack_sauvegarde_en_cours">Sauvegarde en cours</string>
+    <string name="restauration_ok">Restauration correctement terminée</string>
+    <string name="restauration_failed">Restauration échouée</string>
+    <string name="restauration_annulee">Restauration annulée</string>
+    <string name="snack_restauration_en_cours">Restauration en cours</string>
+    <string name="snack_impossible_lancer_sauvegarde">Impossible de lancer la sauvegarde, serveur non joignable</string>
+    <string name="snack_impossible_lancer_restauration">Impossible de lancer la restauration, serveur non joignable</string>
+    <plurals name="nombre_serveurs_trouvés">
+        <item quantity="zero">Recherche en cours, aucun serveur</item>
+        <item quantity="one">Recherche en cours, un serveur trouvé</item>
+        <item quantity="other">Recherche en cours, %d serveurs trouvés</item>
+    </plurals>
+
+    <string name="html_template_mms_text"><![CDATA[<DIV class=\"mms_texte\">%s<BR></DIV>\n]]></string>
+    <string name="html_template_mms_images"><![CDATA[<DIV class=\"mms_image\"><IMG SRC=\"%s\"><BR></DIV>\n]]></string>
+    <string name="html_template_mms_smiley"><![CDATA[<DIV class=\"mms_smiley\">%s<BR></DIV>\n]]></string>
+    <string name="libelle_sauvegarde">Sauvegarde</string>
+    <string name="libelle_restauration">Restauration</string>
+    <string name="sms_app_defaut">Application SMS par défaut</string>
+    <string name="sms_app_defaut_texte">Le système Android impose par mesure de sécurité que seule l\'application de gestion des SMS par défaut puisse créer des nouveaux messages. Pour permettre à cette application de restaurer les messages, l\'écran de choix de l\'application par défaut va être montré. Veuillez choisir \'Sauvegarde Locale\'. Lorsque la restauration sera terminée, l\'écran sera remontré pour vous permettre de resélectionner votre application SMS par défaut</string>
+</resources>

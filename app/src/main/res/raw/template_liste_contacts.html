@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<TITLE>@@SMS_TITRE@@</TITLE>
+<meta charset="@@CONTACT_CHARSET@@">
+<style>
+table.contacts {
+  width: 100%;
+}
+table.contacts td, table.contacts th {
+  padding: 2px 2px;
+}
+table.contacts tr:nth-child(even) {
+  background: #90CAF9;
+}
+
+table.contacts tfoot .links {
+  text-align: right;
+}
+table.contacts tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+img.contact
+{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  max-height: 600px;
+box-shadow: 1px 1px 2px #2228;
+border: 1px solid #888;
+border-radius: 40%;
+}
+
+img.contact
+{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  max-height: 600px;
+box-shadow: 1px 1px 2px #2228;
+border: 1px solid #888;
+border-radius: 50%;
+}
+
+
+img.contact:hover
+{
+box-shadow: 0 0 3px 3px #FF9800;
+transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+border-radius: 10%;
+-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+
+a.contact:hover
+{
+box-shadow: 0 0 3px 3px #FF9800;
+transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+a:link, a:visited {
+    border: none;
+    color: #01579B;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+</HEAD>
+<BODY>
+<TABLE class="contacts">
+@@TABLE_CONTACTS@@
+</TABLE>
+</BODY>
+<!--
+<<<DATA>>>
+DATE @@SMS_DATE@@
+ADDRESS @@SMS_ADRESSE@@
+DATESENT @@SMS_DATE_SENT@@
+BODY @@SMS_BODY@@
+LOCKED @@SMS_LOCKED@@
+PERSON @@SMS_PERSON@@
+PROTOCOL @@SMS_PROTOCOL@@
+READ @@SMS_READ@@
+REPLYPATHPRESENT @@SMS_REPLYPATHPRESENT@@
+SEEN @@SMS_SEEN@@
+SERVICECENTER @@SMS_SERVICECENTER@@
+STATUS @@SMS_STATUS@@
+SUBJECT @@SMS_SUBJECT@@
+THREADID @@SMS_THREADID@@
+TYPE @@SMS_TYPE@@
+<<<ENDDATA>>>
+-->
+</HTML>

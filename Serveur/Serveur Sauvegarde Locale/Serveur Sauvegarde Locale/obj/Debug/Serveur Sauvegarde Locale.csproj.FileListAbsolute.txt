@@ -1,0 +1,23 @@
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Debug\Serveur Sauvegarde Locale.exe.config
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Debug\Serveur Sauvegarde Locale.exe
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Debug\Serveur Sauvegarde Locale.pdb
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.csprojAssemblyReference.cache
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur_Sauvegarde_Locale.Properties.Resources.resources
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.csproj.GenerateResource.cache
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.csproj.CoreCompileInputs.cache
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.exe
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.pdb
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur_Sauvegarde_Locale.Mainform.resources
+C:\Users\lpill\source\repos\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur_Sauvegarde_Locale.Resource.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Debug\Serveur Sauvegarde Locale.exe.config
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Debug\Serveur Sauvegarde Locale.exe
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Debug\Serveur Sauvegarde Locale.pdb
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur_Sauvegarde_Locale.Mainform.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur_Sauvegarde_Locale.Properties.Resources.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur_Sauvegarde_Locale.Resource.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.csproj.GenerateResource.cache
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.csproj.CoreCompileInputs.cache
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.exe
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.pdb
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur Sauvegarde Locale.csprojAssemblyReference.cache
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Debug\Serveur_Sauvegarde_Locale.MyToggle.resources

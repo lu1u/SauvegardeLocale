@@ -1,0 +1,12 @@
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Release\Serveur Sauvegarde Locale.exe.config
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Release\Serveur Sauvegarde Locale.exe
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\bin\Release\Serveur Sauvegarde Locale.pdb
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur Sauvegarde Locale.csprojAssemblyReference.cache
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur_Sauvegarde_Locale.Mainform.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur_Sauvegarde_Locale.MyToggle.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur_Sauvegarde_Locale.Properties.Resources.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur_Sauvegarde_Locale.Resource.resources
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur Sauvegarde Locale.csproj.GenerateResource.cache
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur Sauvegarde Locale.csproj.CoreCompileInputs.cache
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur Sauvegarde Locale.exe
+D:\lucien\Developpement\Android\SauvegardeLocale\Serveur\Serveur Sauvegarde Locale\Serveur Sauvegarde Locale\obj\Release\Serveur Sauvegarde Locale.pdb

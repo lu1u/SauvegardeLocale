@@ -1,0 +1,6 @@
+div.sms_entete {background-color: rgba(220, 240, 255, .5); }
+div.sms_destinataire {font-weight:bold}
+div.sms_envoyerecu {font-style:italic}
+div.sms_lu {background-color: rgba(220, 240, 255, .5); }
+div.sms_texte { background-color: rgb(220, 240, 255);}
+div.sms_table_entete {}
